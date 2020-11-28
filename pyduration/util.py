@@ -1,5 +1,5 @@
 """
-Utilities used by durationpy.
+Utilities used by pyduration.
 """
 
 import arrow

@@ -4,7 +4,7 @@ A calendar unit length utility library.
 Start by importing `Duration`:
 
 ```
-from durationpy import Duration
+from pyduration import Duration
 ```
 
 See Duration.

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 <meta name="generator" content="pdoc 0.9.1" />
-<title>durationpy.duration API documentation</title>
+<title>pyduration.duration API documentation</title>
 <meta name="description" content="A calendar unit length utility library …" />
 <link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
 <link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
@@ -19,12 +19,12 @@
 <main>
 <article id="content">
 <header>
-<h1 class="title">Module <code>durationpy.duration</code></h1>
+<h1 class="title">Module <code>pyduration.duration</code></h1>
 </header>
 <section id="section-intro">
 <p>A calendar unit length utility library.</p>
-<p>Start by importing <code><a title="durationpy.duration.Duration" href="#durationpy.duration.Duration">Duration</a></code>:</p>
-<pre><code>from durationpy import Duration
+<p>Start by importing <code><a title="pyduration.duration.Duration" href="#pyduration.duration.Duration">Duration</a></code>:</p>
+<pre><code>from pyduration import Duration
 </code></pre>
 <p>See Duration.</p>
 <details class="source">
@@ -37,7 +37,7 @@ A calendar unit length utility library.
 Start by importing `Duration`:
 
 ```
-from durationpy import Duration
+from pyduration import Duration
 ```
 
 See Duration.
@@ -953,7 +953,7 @@ class Duration:
 <section>
 <h2 class="section-title" id="header-classes">Classes</h2>
 <dl>
-<dt id="durationpy.duration.Duration"><code class="flex name class">
+<dt id="pyduration.duration.Duration"><code class="flex name class">
 <span>class <span class="ident">Duration</span></span>
 <span>(</span><span>*args, **kwargs)</span>
 </code></dt>
@@ -1768,14 +1768,14 @@ For example, 1 day, 2 hours, 2 months, 1 week.</p></div>
 </details>
 <h3>Class variables</h3>
 <dl>
-<dt id="durationpy.duration.Duration.units"><code class="name">var <span class="ident">units</span></code></dt>
+<dt id="pyduration.duration.Duration.units"><code class="name">var <span class="ident">units</span></code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
 </dl>
 <h3>Static methods</h3>
 <dl>
-<dt id="durationpy.duration.Duration.normalized_dict"><code class="name flex">
+<dt id="pyduration.duration.Duration.normalized_dict"><code class="name flex">
 <span>def <span class="ident">normalized_dict</span></span>(<span>*args, **kwargs) ‑> Union[Dict[str, int], NoneType]</span>
 </code></dt>
 <dd>
@@ -1873,7 +1873,7 @@ def normalized_dict(cls, *args, **kwargs) -&gt; Optional[Dict[str, int]]:
     return t</code></pre>
 </details>
 </dd>
-<dt id="durationpy.duration.Duration.parse"><code class="name flex">
+<dt id="pyduration.duration.Duration.parse"><code class="name flex">
 <span>def <span class="ident">parse</span></span>(<span>*args, **kwargs)</span>
 </code></dt>
 <dd>
@@ -1896,7 +1896,7 @@ def parse(cls, *args, **kwargs):
         return r</code></pre>
 </details>
 </dd>
-<dt id="durationpy.duration.Duration.parse_many"><code class="name flex">
+<dt id="pyduration.duration.Duration.parse_many"><code class="name flex">
 <span>def <span class="ident">parse_many</span></span>(<span>a)</span>
 </code></dt>
 <dd>
@@ -1910,7 +1910,7 @@ def parse_many(cls, a):
     return [cls.parse(x) for x in a]</code></pre>
 </details>
 </dd>
-<dt id="durationpy.duration.Duration.parse_unit"><code class="name flex">
+<dt id="pyduration.duration.Duration.parse_unit"><code class="name flex">
 <span>def <span class="ident">parse_unit</span></span>(<span>maybe_unit)</span>
 </code></dt>
 <dd>
@@ -1936,7 +1936,7 @@ def parse_unit(cls, maybe_unit):
     return unit</code></pre>
 </details>
 </dd>
-<dt id="durationpy.duration.Duration.plural_unit"><code class="name flex">
+<dt id="pyduration.duration.Duration.plural_unit"><code class="name flex">
 <span>def <span class="ident">plural_unit</span></span>(<span>unit)</span>
 </code></dt>
 <dd>
@@ -1951,7 +1951,7 @@ def plural_unit(cls, unit):
     return unit</code></pre>
 </details>
 </dd>
-<dt id="durationpy.duration.Duration.singular_unit"><code class="name flex">
+<dt id="pyduration.duration.Duration.singular_unit"><code class="name flex">
 <span>def <span class="ident">singular_unit</span></span>(<span>unit)</span>
 </code></dt>
 <dd>
@@ -1966,7 +1966,7 @@ def singular_unit(cls, unit):
     return SINGLUAR_UNIT_MAP[unit]</code></pre>
 </details>
 </dd>
-<dt id="durationpy.duration.Duration.unit_symbol"><code class="name flex">
+<dt id="pyduration.duration.Duration.unit_symbol"><code class="name flex">
 <span>def <span class="ident">unit_symbol</span></span>(<span>unit)</span>
 </code></dt>
 <dd>
@@ -1984,7 +1984,7 @@ def unit_symbol(cls, unit):
 </dl>
 <h3>Instance variables</h3>
 <dl>
-<dt id="durationpy.duration.Duration.ave_seconds"><code class="name">var <span class="ident">ave_seconds</span></code></dt>
+<dt id="pyduration.duration.Duration.ave_seconds"><code class="name">var <span class="ident">ave_seconds</span></code></dt>
 <dd>
 <div class="desc"></div>
 <details class="source">
@@ -1996,7 +1996,7 @@ def ave_seconds(self):
     return self.degree * SECONDS_AVE[self.unit]</code></pre>
 </details>
 </dd>
-<dt id="durationpy.duration.Duration.degree"><code class="name">var <span class="ident">degree</span></code></dt>
+<dt id="pyduration.duration.Duration.degree"><code class="name">var <span class="ident">degree</span></code></dt>
 <dd>
 <div class="desc"></div>
 <details class="source">
@@ -2008,7 +2008,7 @@ def degree(self):
     return list(self._data.values())[0]</code></pre>
 </details>
 </dd>
-<dt id="durationpy.duration.Duration.is_calendar_required"><code class="name">var <span class="ident">is_calendar_required</span></code></dt>
+<dt id="pyduration.duration.Duration.is_calendar_required"><code class="name">var <span class="ident">is_calendar_required</span></code></dt>
 <dd>
 <div class="desc"></div>
 <details class="source">
@@ -2029,7 +2029,7 @@ def is_calendar_required(self):
         not self.is_uniform</code></pre>
 </details>
 </dd>
-<dt id="durationpy.duration.Duration.is_uniform"><code class="name">var <span class="ident">is_uniform</span></code></dt>
+<dt id="pyduration.duration.Duration.is_uniform"><code class="name">var <span class="ident">is_uniform</span></code></dt>
 <dd>
 <div class="desc"></div>
 <details class="source">
@@ -2051,7 +2051,7 @@ def is_uniform(self):
     return min_s % s == 0 and max_s % s == 0</code></pre>
 </details>
 </dd>
-<dt id="durationpy.duration.Duration.max_seconds"><code class="name">var <span class="ident">max_seconds</span></code></dt>
+<dt id="pyduration.duration.Duration.max_seconds"><code class="name">var <span class="ident">max_seconds</span></code></dt>
 <dd>
 <div class="desc"></div>
 <details class="source">
@@ -2063,7 +2063,7 @@ def max_seconds(self):
     return self.degree * SECONDS_RANGES[self.unit][1]</code></pre>
 </details>
 </dd>
-<dt id="durationpy.duration.Duration.min_seconds"><code class="name">var <span class="ident">min_seconds</span></code></dt>
+<dt id="pyduration.duration.Duration.min_seconds"><code class="name">var <span class="ident">min_seconds</span></code></dt>
 <dd>
 <div class="desc"></div>
 <details class="source">
@@ -2088,7 +2088,7 @@ def min_seconds(self):
     return self._min_seconds</code></pre>
 </details>
 </dd>
-<dt id="durationpy.duration.Duration.parent"><code class="name">var <span class="ident">parent</span></code></dt>
+<dt id="pyduration.duration.Duration.parent"><code class="name">var <span class="ident">parent</span></code></dt>
 <dd>
 <div class="desc"><p>Returns the parent calendar length, which clamps
 this calendar length's intervals its intervals.</p></div>
@@ -2110,7 +2110,7 @@ def parent(self):
     return self._parent</code></pre>
 </details>
 </dd>
-<dt id="durationpy.duration.Duration.symbol"><code class="name">var <span class="ident">symbol</span></code></dt>
+<dt id="pyduration.duration.Duration.symbol"><code class="name">var <span class="ident">symbol</span></code></dt>
 <dd>
 <div class="desc"></div>
 <details class="source">
@@ -2122,7 +2122,7 @@ def symbol(self):
     return type(self).unit_symbol(self.unit)</code></pre>
 </details>
 </dd>
-<dt id="durationpy.duration.Duration.total_seconds"><code class="name">var <span class="ident">total_seconds</span></code></dt>
+<dt id="pyduration.duration.Duration.total_seconds"><code class="name">var <span class="ident">total_seconds</span></code></dt>
 <dd>
 <div class="desc"></div>
 <details class="source">
@@ -2136,7 +2136,7 @@ def total_seconds(self):
     return self.min_seconds</code></pre>
 </details>
 </dd>
-<dt id="durationpy.duration.Duration.unit"><code class="name">var <span class="ident">unit</span></code></dt>
+<dt id="pyduration.duration.Duration.unit"><code class="name">var <span class="ident">unit</span></code></dt>
 <dd>
 <div class="desc"></div>
 <details class="source">
@@ -2151,8 +2151,8 @@ def unit(self):
 </dl>
 <h3>Methods</h3>
 <dl>
-<dt id="durationpy.duration.Duration.aggregate"><code class="name flex">
-<span>def <span class="ident">aggregate</span></span>(<span>self, degree: int) ‑> <a title="durationpy.duration.Duration" href="#durationpy.duration.Duration">Duration</a></span>
+<dt id="pyduration.duration.Duration.aggregate"><code class="name flex">
+<span>def <span class="ident">aggregate</span></span>(<span>self, degree: int) ‑> <a title="pyduration.duration.Duration" href="#pyduration.duration.Duration">Duration</a></span>
 </code></dt>
 <dd>
 <div class="desc"><p>Returns a calendar length multiplied by the specified <code>degree</code>.</p></div>
@@ -2167,7 +2167,7 @@ def unit(self):
     return self.with_degree(self.degree * degree)</code></pre>
 </details>
 </dd>
-<dt id="durationpy.duration.Duration.ceil"><code class="name flex">
+<dt id="pyduration.duration.Duration.ceil"><code class="name flex">
 <span>def <span class="ident">ceil</span></span>(<span>self, date) ‑> float</span>
 </code></dt>
 <dd>
@@ -2183,7 +2183,7 @@ def unit(self):
     return self.span_date(date, start_open=True).end</code></pre>
 </details>
 </dd>
-<dt id="durationpy.duration.Duration.count"><code class="name flex">
+<dt id="pyduration.duration.Duration.count"><code class="name flex">
 <span>def <span class="ident">count</span></span>(<span>self, interval, start_open=False) ‑> int</span>
 </code></dt>
 <dd>
@@ -2215,7 +2215,7 @@ def unit(self):
         return int(math.ceil(interval.length / self.ave_seconds))</code></pre>
 </details>
 </dd>
-<dt id="durationpy.duration.Duration.equals"><code class="name flex">
+<dt id="pyduration.duration.Duration.equals"><code class="name flex">
 <span>def <span class="ident">equals</span></span>(<span>self, other)</span>
 </code></dt>
 <dd>
@@ -2229,7 +2229,7 @@ def unit(self):
         self._data == other._data</code></pre>
 </details>
 </dd>
-<dt id="durationpy.duration.Duration.floor"><code class="name flex">
+<dt id="pyduration.duration.Duration.floor"><code class="name flex">
 <span>def <span class="ident">floor</span></span>(<span>self, date) ‑> float</span>
 </code></dt>
 <dd>
@@ -2245,7 +2245,7 @@ def unit(self):
     return self.span_date(date, start_open=False).start</code></pre>
 </details>
 </dd>
-<dt id="durationpy.duration.Duration.get_descriptor"><code class="name flex">
+<dt id="pyduration.duration.Duration.get_descriptor"><code class="name flex">
 <span>def <span class="ident">get_descriptor</span></span>(<span>self)</span>
 </code></dt>
 <dd>
@@ -2258,7 +2258,7 @@ def unit(self):
     return dict(self._data)</code></pre>
 </details>
 </dd>
-<dt id="durationpy.duration.Duration.iterate"><code class="name flex">
+<dt id="pyduration.duration.Duration.iterate"><code class="name flex">
 <span>def <span class="ident">iterate</span></span>(<span>self, interval, size=1, backward=False, start_open=False) ‑> Iterator[Union[intervalpy.interval.Interval, NoneType]]</span>
 </code></dt>
 <dd>
@@ -2326,7 +2326,7 @@ Does not trim timespans inside the interval.</p></div>
     return iter(next_span_in_interval, None)</code></pre>
 </details>
 </dd>
-<dt id="durationpy.duration.Duration.next"><code class="name flex">
+<dt id="pyduration.duration.Duration.next"><code class="name flex">
 <span>def <span class="ident">next</span></span>(<span>self, date) ‑> float</span>
 </code></dt>
 <dd>
@@ -2342,7 +2342,7 @@ Does not trim timespans inside the interval.</p></div>
     return self.span_date(date, start_open=False).end</code></pre>
 </details>
 </dd>
-<dt id="durationpy.duration.Duration.pad"><code class="name flex">
+<dt id="pyduration.duration.Duration.pad"><code class="name flex">
 <span>def <span class="ident">pad</span></span>(<span>self, interval, start=0, end=0, start_open=False) ‑> intervalpy.interval.Interval</span>
 </code></dt>
 <dd>
@@ -2370,7 +2370,7 @@ Does not trim timespans inside the interval.</p></div>
     return Interval(l, h, start_open=start_open, end_open=not start_open)</code></pre>
 </details>
 </dd>
-<dt id="durationpy.duration.Duration.previous"><code class="name flex">
+<dt id="pyduration.duration.Duration.previous"><code class="name flex">
 <span>def <span class="ident">previous</span></span>(<span>self, date) ‑> float</span>
 </code></dt>
 <dd>
@@ -2386,7 +2386,7 @@ Does not trim timespans inside the interval.</p></div>
     return self.span_date(date, start_open=True).start</code></pre>
 </details>
 </dd>
-<dt id="durationpy.duration.Duration.round"><code class="name flex">
+<dt id="pyduration.duration.Duration.round"><code class="name flex">
 <span>def <span class="ident">round</span></span>(<span>self, date) ‑> float</span>
 </code></dt>
 <dd>
@@ -2407,7 +2407,7 @@ Does not trim timespans inside the interval.</p></div>
         return floor</code></pre>
 </details>
 </dd>
-<dt id="durationpy.duration.Duration.set_descriptor"><code class="name flex">
+<dt id="pyduration.duration.Duration.set_descriptor"><code class="name flex">
 <span>def <span class="ident">set_descriptor</span></span>(<span>self, data)</span>
 </code></dt>
 <dd>
@@ -2423,7 +2423,7 @@ Does not trim timespans inside the interval.</p></div>
     self._data = ndata</code></pre>
 </details>
 </dd>
-<dt id="durationpy.duration.Duration.span"><code class="name flex">
+<dt id="pyduration.duration.Duration.span"><code class="name flex">
 <span>def <span class="ident">span</span></span>(<span>self, x, start_open=False) ‑> intervalpy.interval.Interval</span>
 </code></dt>
 <dd>
@@ -2442,7 +2442,7 @@ Does not trim timespans inside the interval.</p></div>
         return self.span_interval(x, start_open=start_open)</code></pre>
 </details>
 </dd>
-<dt id="durationpy.duration.Duration.span_date"><code class="name flex">
+<dt id="pyduration.duration.Duration.span_date"><code class="name flex">
 <span>def <span class="ident">span_date</span></span>(<span>self, date, start_open=False) ‑> intervalpy.interval.Interval</span>
 </code></dt>
 <dd>
@@ -2461,7 +2461,7 @@ Does not trim timespans inside the interval.</p></div>
         return self._non_calendar_span(date, start_open=start_open)</code></pre>
 </details>
 </dd>
-<dt id="durationpy.duration.Duration.span_interval"><code class="name flex">
+<dt id="pyduration.duration.Duration.span_interval"><code class="name flex">
 <span>def <span class="ident">span_interval</span></span>(<span>self, interval, start_open=False) ‑> intervalpy.interval.Interval</span>
 </code></dt>
 <dd>
@@ -2501,7 +2501,7 @@ Does not trim timespans inside the interval.</p></div>
     return Interval(start, end, start_open=start_open, end_open=not start_open)</code></pre>
 </details>
 </dd>
-<dt id="durationpy.duration.Duration.step"><code class="name flex">
+<dt id="pyduration.duration.Duration.step"><code class="name flex">
 <span>def <span class="ident">step</span></span>(<span>self, date, count=1, backward=False) ‑> float</span>
 </code></dt>
 <dd>
@@ -2540,7 +2540,7 @@ Does not trim timespans inside the interval.</p></div>
         return ndate</code></pre>
 </details>
 </dd>
-<dt id="durationpy.duration.Duration.to_str"><code class="name flex">
+<dt id="pyduration.duration.Duration.to_str"><code class="name flex">
 <span>def <span class="ident">to_str</span></span>(<span>self)</span>
 </code></dt>
 <dd>
@@ -2553,7 +2553,7 @@ Does not trim timespans inside the interval.</p></div>
     return f&#39;{self.degree}{self.symbol}&#39;</code></pre>
 </details>
 </dd>
-<dt id="durationpy.duration.Duration.walk"><code class="name flex">
+<dt id="pyduration.duration.Duration.walk"><code class="name flex">
 <span>def <span class="ident">walk</span></span>(<span>self, start, limit: Union[numbers.Number, NoneType] = None, size=1, backward=False, start_open=False) ‑> Iterator[Union[intervalpy.interval.Interval, NoneType]]</span>
 </code></dt>
 <dd>
@@ -2599,8 +2599,8 @@ Does not trim timespans inside the interval.</p></div>
     return iter(next_span, None)</code></pre>
 </details>
 </dd>
-<dt id="durationpy.duration.Duration.with_degree"><code class="name flex">
-<span>def <span class="ident">with_degree</span></span>(<span>self, degree: int) ‑> <a title="durationpy.duration.Duration" href="#durationpy.duration.Duration">Duration</a></span>
+<dt id="pyduration.duration.Duration.with_degree"><code class="name flex">
+<span>def <span class="ident">with_degree</span></span>(<span>self, degree: int) ‑> <a title="pyduration.duration.Duration" href="#pyduration.duration.Duration">Duration</a></span>
 </code></dt>
 <dd>
 <div class="desc"><p>Returns a calendar length with specified <code>degree</code>.</p></div>
@@ -2633,51 +2633,51 @@ Does not trim timespans inside the interval.</p></div>
 <ul id="index">
 <li><h3>Super-module</h3>
 <ul>
-<li><code><a title="durationpy" href="index.html">durationpy</a></code></li>
+<li><code><a title="pyduration" href="index.html">pyduration</a></code></li>
 </ul>
 </li>
 <li><h3><a href="#header-classes">Classes</a></h3>
 <ul>
 <li>
-<h4><code><a title="durationpy.duration.Duration" href="#durationpy.duration.Duration">Duration</a></code></h4>
+<h4><code><a title="pyduration.duration.Duration" href="#pyduration.duration.Duration">Duration</a></code></h4>
 <ul class="">
-<li><code><a title="durationpy.duration.Duration.aggregate" href="#durationpy.duration.Duration.aggregate">aggregate</a></code></li>
-<li><code><a title="durationpy.duration.Duration.ave_seconds" href="#durationpy.duration.Duration.ave_seconds">ave_seconds</a></code></li>
-<li><code><a title="durationpy.duration.Duration.ceil" href="#durationpy.duration.Duration.ceil">ceil</a></code></li>
-<li><code><a title="durationpy.duration.Duration.count" href="#durationpy.duration.Duration.count">count</a></code></li>
-<li><code><a title="durationpy.duration.Duration.degree" href="#durationpy.duration.Duration.degree">degree</a></code></li>
-<li><code><a title="durationpy.duration.Duration.equals" href="#durationpy.duration.Duration.equals">equals</a></code></li>
-<li><code><a title="durationpy.duration.Duration.floor" href="#durationpy.duration.Duration.floor">floor</a></code></li>
-<li><code><a title="durationpy.duration.Duration.get_descriptor" href="#durationpy.duration.Duration.get_descriptor">get_descriptor</a></code></li>
-<li><code><a title="durationpy.duration.Duration.is_calendar_required" href="#durationpy.duration.Duration.is_calendar_required">is_calendar_required</a></code></li>
-<li><code><a title="durationpy.duration.Duration.is_uniform" href="#durationpy.duration.Duration.is_uniform">is_uniform</a></code></li>
-<li><code><a title="durationpy.duration.Duration.iterate" href="#durationpy.duration.Duration.iterate">iterate</a></code></li>
-<li><code><a title="durationpy.duration.Duration.max_seconds" href="#durationpy.duration.Duration.max_seconds">max_seconds</a></code></li>
-<li><code><a title="durationpy.duration.Duration.min_seconds" href="#durationpy.duration.Duration.min_seconds">min_seconds</a></code></li>
-<li><code><a title="durationpy.duration.Duration.next" href="#durationpy.duration.Duration.next">next</a></code></li>
-<li><code><a title="durationpy.duration.Duration.normalized_dict" href="#durationpy.duration.Duration.normalized_dict">normalized_dict</a></code></li>
-<li><code><a title="durationpy.duration.Duration.pad" href="#durationpy.duration.Duration.pad">pad</a></code></li>
-<li><code><a title="durationpy.duration.Duration.parent" href="#durationpy.duration.Duration.parent">parent</a></code></li>
-<li><code><a title="durationpy.duration.Duration.parse" href="#durationpy.duration.Duration.parse">parse</a></code></li>
-<li><code><a title="durationpy.duration.Duration.parse_many" href="#durationpy.duration.Duration.parse_many">parse_many</a></code></li>
-<li><code><a title="durationpy.duration.Duration.parse_unit" href="#durationpy.duration.Duration.parse_unit">parse_unit</a></code></li>
-<li><code><a title="durationpy.duration.Duration.plural_unit" href="#durationpy.duration.Duration.plural_unit">plural_unit</a></code></li>
-<li><code><a title="durationpy.duration.Duration.previous" href="#durationpy.duration.Duration.previous">previous</a></code></li>
-<li><code><a title="durationpy.duration.Duration.round" href="#durationpy.duration.Duration.round">round</a></code></li>
-<li><code><a title="durationpy.duration.Duration.set_descriptor" href="#durationpy.duration.Duration.set_descriptor">set_descriptor</a></code></li>
-<li><code><a title="durationpy.duration.Duration.singular_unit" href="#durationpy.duration.Duration.singular_unit">singular_unit</a></code></li>
-<li><code><a title="durationpy.duration.Duration.span" href="#durationpy.duration.Duration.span">span</a></code></li>
-<li><code><a title="durationpy.duration.Duration.span_date" href="#durationpy.duration.Duration.span_date">span_date</a></code></li>
-<li><code><a title="durationpy.duration.Duration.span_interval" href="#durationpy.duration.Duration.span_interval">span_interval</a></code></li>
-<li><code><a title="durationpy.duration.Duration.step" href="#durationpy.duration.Duration.step">step</a></code></li>
-<li><code><a title="durationpy.duration.Duration.symbol" href="#durationpy.duration.Duration.symbol">symbol</a></code></li>
-<li><code><a title="durationpy.duration.Duration.to_str" href="#durationpy.duration.Duration.to_str">to_str</a></code></li>
-<li><code><a title="durationpy.duration.Duration.total_seconds" href="#durationpy.duration.Duration.total_seconds">total_seconds</a></code></li>
-<li><code><a title="durationpy.duration.Duration.unit" href="#durationpy.duration.Duration.unit">unit</a></code></li>
-<li><code><a title="durationpy.duration.Duration.unit_symbol" href="#durationpy.duration.Duration.unit_symbol">unit_symbol</a></code></li>
-<li><code><a title="durationpy.duration.Duration.units" href="#durationpy.duration.Duration.units">units</a></code></li>
-<li><code><a title="durationpy.duration.Duration.walk" href="#durationpy.duration.Duration.walk">walk</a></code></li>
-<li><code><a title="durationpy.duration.Duration.with_degree" href="#durationpy.duration.Duration.with_degree">with_degree</a></code></li>
+<li><code><a title="pyduration.duration.Duration.aggregate" href="#pyduration.duration.Duration.aggregate">aggregate</a></code></li>
+<li><code><a title="pyduration.duration.Duration.ave_seconds" href="#pyduration.duration.Duration.ave_seconds">ave_seconds</a></code></li>
+<li><code><a title="pyduration.duration.Duration.ceil" href="#pyduration.duration.Duration.ceil">ceil</a></code></li>
+<li><code><a title="pyduration.duration.Duration.count" href="#pyduration.duration.Duration.count">count</a></code></li>
+<li><code><a title="pyduration.duration.Duration.degree" href="#pyduration.duration.Duration.degree">degree</a></code></li>
+<li><code><a title="pyduration.duration.Duration.equals" href="#pyduration.duration.Duration.equals">equals</a></code></li>
+<li><code><a title="pyduration.duration.Duration.floor" href="#pyduration.duration.Duration.floor">floor</a></code></li>
+<li><code><a title="pyduration.duration.Duration.get_descriptor" href="#pyduration.duration.Duration.get_descriptor">get_descriptor</a></code></li>
+<li><code><a title="pyduration.duration.Duration.is_calendar_required" href="#pyduration.duration.Duration.is_calendar_required">is_calendar_required</a></code></li>
+<li><code><a title="pyduration.duration.Duration.is_uniform" href="#pyduration.duration.Duration.is_uniform">is_uniform</a></code></li>
+<li><code><a title="pyduration.duration.Duration.iterate" href="#pyduration.duration.Duration.iterate">iterate</a></code></li>
+<li><code><a title="pyduration.duration.Duration.max_seconds" href="#pyduration.duration.Duration.max_seconds">max_seconds</a></code></li>
+<li><code><a title="pyduration.duration.Duration.min_seconds" href="#pyduration.duration.Duration.min_seconds">min_seconds</a></code></li>
+<li><code><a title="pyduration.duration.Duration.next" href="#pyduration.duration.Duration.next">next</a></code></li>
+<li><code><a title="pyduration.duration.Duration.normalized_dict" href="#pyduration.duration.Duration.normalized_dict">normalized_dict</a></code></li>
+<li><code><a title="pyduration.duration.Duration.pad" href="#pyduration.duration.Duration.pad">pad</a></code></li>
+<li><code><a title="pyduration.duration.Duration.parent" href="#pyduration.duration.Duration.parent">parent</a></code></li>
+<li><code><a title="pyduration.duration.Duration.parse" href="#pyduration.duration.Duration.parse">parse</a></code></li>
+<li><code><a title="pyduration.duration.Duration.parse_many" href="#pyduration.duration.Duration.parse_many">parse_many</a></code></li>
+<li><code><a title="pyduration.duration.Duration.parse_unit" href="#pyduration.duration.Duration.parse_unit">parse_unit</a></code></li>
+<li><code><a title="pyduration.duration.Duration.plural_unit" href="#pyduration.duration.Duration.plural_unit">plural_unit</a></code></li>
+<li><code><a title="pyduration.duration.Duration.previous" href="#pyduration.duration.Duration.previous">previous</a></code></li>
+<li><code><a title="pyduration.duration.Duration.round" href="#pyduration.duration.Duration.round">round</a></code></li>
+<li><code><a title="pyduration.duration.Duration.set_descriptor" href="#pyduration.duration.Duration.set_descriptor">set_descriptor</a></code></li>
+<li><code><a title="pyduration.duration.Duration.singular_unit" href="#pyduration.duration.Duration.singular_unit">singular_unit</a></code></li>
+<li><code><a title="pyduration.duration.Duration.span" href="#pyduration.duration.Duration.span">span</a></code></li>
+<li><code><a title="pyduration.duration.Duration.span_date" href="#pyduration.duration.Duration.span_date">span_date</a></code></li>
+<li><code><a title="pyduration.duration.Duration.span_interval" href="#pyduration.duration.Duration.span_interval">span_interval</a></code></li>
+<li><code><a title="pyduration.duration.Duration.step" href="#pyduration.duration.Duration.step">step</a></code></li>
+<li><code><a title="pyduration.duration.Duration.symbol" href="#pyduration.duration.Duration.symbol">symbol</a></code></li>
+<li><code><a title="pyduration.duration.Duration.to_str" href="#pyduration.duration.Duration.to_str">to_str</a></code></li>
+<li><code><a title="pyduration.duration.Duration.total_seconds" href="#pyduration.duration.Duration.total_seconds">total_seconds</a></code></li>
+<li><code><a title="pyduration.duration.Duration.unit" href="#pyduration.duration.Duration.unit">unit</a></code></li>
+<li><code><a title="pyduration.duration.Duration.unit_symbol" href="#pyduration.duration.Duration.unit_symbol">unit_symbol</a></code></li>
+<li><code><a title="pyduration.duration.Duration.units" href="#pyduration.duration.Duration.units">units</a></code></li>
+<li><code><a title="pyduration.duration.Duration.walk" href="#pyduration.duration.Duration.walk">walk</a></code></li>
+<li><code><a title="pyduration.duration.Duration.with_degree" href="#pyduration.duration.Duration.with_degree">with_degree</a></code></li>
 </ul>
 </li>
 </ul>

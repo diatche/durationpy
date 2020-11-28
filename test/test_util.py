@@ -1,10 +1,10 @@
 import os
 import sys
 import pytest
-from durationpy import util
+from pyduration import util
 
 module_dir = os.path.dirname(__file__)
-sys.path.append(os.path.join(module_dir, '..', 'durationpy'))
+sys.path.append(os.path.join(module_dir, '..', 'pyduration'))
 
 
 def test_flatten():

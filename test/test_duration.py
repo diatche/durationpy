@@ -3,10 +3,10 @@ from intervalpy import Interval
 import os
 import pytest
 import sys
-from durationpy import Duration, util
+from pyduration import Duration, util
 
 module_dir = os.path.dirname(__file__)
-sys.path.append(os.path.join(module_dir, '..', 'durationpy'))
+sys.path.append(os.path.join(module_dir, '..', 'pyduration'))
 
 t_ = util.timestamp
 

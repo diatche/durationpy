@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 <meta name="generator" content="pdoc 0.9.1" />
-<title>durationpy.util API documentation</title>
-<meta name="description" content="Utilities used by durationpy." />
+<title>pyduration.util API documentation</title>
+<meta name="description" content="Utilities used by pyduration." />
 <link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
 <link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
 <link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
@@ -19,16 +19,16 @@
 <main>
 <article id="content">
 <header>
-<h1 class="title">Module <code>durationpy.util</code></h1>
+<h1 class="title">Module <code>pyduration.util</code></h1>
 </header>
 <section id="section-intro">
-<p>Utilities used by durationpy.</p>
+<p>Utilities used by pyduration.</p>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">&#34;&#34;&#34;
-Utilities used by durationpy.
+Utilities used by pyduration.
 &#34;&#34;&#34;
 
 import arrow
@@ -97,7 +97,7 @@ def timestamp(x: Any) -&gt; float:
 <section>
 <h2 class="section-title" id="header-functions">Functions</h2>
 <dl>
-<dt id="durationpy.util.filter_any"><code class="name flex">
+<dt id="pyduration.util.filter_any"><code class="name flex">
 <span>def <span class="ident">filter_any</span></span>(<span>cb, a)</span>
 </code></dt>
 <dd>
@@ -116,7 +116,7 @@ def timestamp(x: Any) -&gt; float:
         return list(filter(cb, a))</code></pre>
 </details>
 </dd>
-<dt id="durationpy.util.flatten"><code class="name flex">
+<dt id="pyduration.util.flatten"><code class="name flex">
 <span>def <span class="ident">flatten</span></span>(<span>items) ‑> list</span>
 </code></dt>
 <dd>
@@ -129,7 +129,7 @@ def timestamp(x: Any) -&gt; float:
     return list(_flatten(items))</code></pre>
 </details>
 </dd>
-<dt id="durationpy.util.timespan"><code class="name flex">
+<dt id="pyduration.util.timespan"><code class="name flex">
 <span>def <span class="ident">timespan</span></span>(<span>t1, t2, open=None, start_open=None, end_open=None)</span>
 </code></dt>
 <dd>
@@ -153,7 +153,7 @@ def timestamp(x: Any) -&gt; float:
     return Interval(t1, t2, start_open=start_open, end_open=end_open)</code></pre>
 </details>
 </dd>
-<dt id="durationpy.util.timestamp"><code class="name flex">
+<dt id="pyduration.util.timestamp"><code class="name flex">
 <span>def <span class="ident">timestamp</span></span>(<span>x: Any) ‑> float</span>
 </code></dt>
 <dd>
@@ -185,15 +185,15 @@ def timestamp(x: Any) -&gt; float:
 <ul id="index">
 <li><h3>Super-module</h3>
 <ul>
-<li><code><a title="durationpy" href="index.html">durationpy</a></code></li>
+<li><code><a title="pyduration" href="index.html">pyduration</a></code></li>
 </ul>
 </li>
 <li><h3><a href="#header-functions">Functions</a></h3>
 <ul class="">
-<li><code><a title="durationpy.util.filter_any" href="#durationpy.util.filter_any">filter_any</a></code></li>
-<li><code><a title="durationpy.util.flatten" href="#durationpy.util.flatten">flatten</a></code></li>
-<li><code><a title="durationpy.util.timespan" href="#durationpy.util.timespan">timespan</a></code></li>
-<li><code><a title="durationpy.util.timestamp" href="#durationpy.util.timestamp">timestamp</a></code></li>
+<li><code><a title="pyduration.util.filter_any" href="#pyduration.util.filter_any">filter_any</a></code></li>
+<li><code><a title="pyduration.util.flatten" href="#pyduration.util.flatten">flatten</a></code></li>
+<li><code><a title="pyduration.util.timespan" href="#pyduration.util.timespan">timespan</a></code></li>
+<li><code><a title="pyduration.util.timestamp" href="#pyduration.util.timestamp">timestamp</a></code></li>
 </ul>
 </li>
 </ul>

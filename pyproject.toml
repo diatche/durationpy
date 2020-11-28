@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "durationpy"
+version = "0.1.0"
+description = "A calendar unit length utility library."
+
+license = "MIT"
+
+authors = [
+    "Pavel Diatchenko <diatche@gmail.com>"
+]
+
+readme = 'README.md'
+
+repository = "https://github.com/diatche/durationpy"
+homepage = "https://github.com/diatche/durationpy"
+
+keywords = [
+    'durationpy',
+    'calendar',
+    'length',
+    'unit',
+    'interval',
+    'date',
+    'date interval'
+]
+
+[tool.poetry.dependencies]
+python = ">=3.5,<4"
+arrow = "^0.12.1"
+intervalpy = "^0.1.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "~5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+test = "pytest:main"
